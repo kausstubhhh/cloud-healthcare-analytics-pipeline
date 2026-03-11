@@ -95,31 +95,44 @@ sql/            BigQuery SQL queries
 
 ---
 
-# Project Progress
+# Exploratory Data Analysis
 
-| Phase   | Description                            | Status      |
-| ------- | -------------------------------------- | ----------- |
-| Phase 0 | Project foundation & environment setup | Complete    |
-| Phase 1 | Cloud infrastructure setup             | Complete    |
-| Phase 2 | Data ingestion pipeline                | Complete    |
-| Phase 3 | Data engineering & cleaning            | In Progress |
-| Phase 4 | Exploratory data analysis              | Planned     |
-| Phase 5 | Machine learning models                | Planned     |
-| Phase 6 | Forecasting models                     | Planned     |
+The dataset was analysed using a Python notebook connected to BigQuery.
+Below are some key visualisations generated during the analysis.
+
+## Height Distribution
+
+![Height Distribution](figures/height_distribution.png)
+
+This plot shows the distribution of height values in the dataset.
 
 ---
 
-# Current Status
+## Weight Distribution
 
-Current Phase: **Phase 3 — Data Engineering & Cleaning**
+![Weight Distribution](figures/weight_distribution.png)
 
-The dataset has been successfully ingested into BigQuery as:
+This visualisation shows how weight values are distributed across the dataset.
 
-```
-pharmacy_analytics.prescriptions_raw
-```
+---
 
-Next step is to transform the raw dataset into cleaned and feature-engineered tables for analytics and machine learning.
+## BMI Distribution
+
+![BMI Distribution](figures/bmi_distribution.png)
+
+BMI values were calculated as part of the feature engineering phase and visualised to understand the spread of health metrics.
+
+---
+
+## Feature Correlation
+
+![Correlation Heatmap](figures/correlation_heatmap.png)
+
+The correlation heatmap highlights relationships between the variables:
+
+* height
+* weight
+* BMI
 
 ---
 
