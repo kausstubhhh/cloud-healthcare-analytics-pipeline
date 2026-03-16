@@ -41,31 +41,52 @@ BigQuery ML Models
 ↓
 Python Analysis & Visualisation
 
+## Pipeline Stages
+
+The analytics system follows a multi-stage cloud pipeline:
+
+1. Data ingestion into BigQuery
+2. Data cleaning and preprocessing
+3. Feature engineering (BMI calculation)
+4. Exploratory data analysis using Python
+5. Machine learning model training using BigQuery ML
+6. Model evaluation and predictions
+7. Time-series prescription demand forecasting
 ---
 
-# Machine Learning Tasks
+## Machine Learning Tasks
 
-## Classification
+### Classification
 
 Predict whether a prescription is likely to exceed a cost threshold.
 
 Potential use cases:
 
-• healthcare cost monitoring
-• anomaly detection
-• prescription pattern analysis
+• healthcare cost monitoring  
+• anomaly detection  
+• prescription pattern analysis  
 
----
 
-## Regression & Forecasting
+### Regression
 
-Predict medication demand and prescription volumes over time.
+Predict patient weight from height using a regression model built with BigQuery ML.
 
 Potential use cases:
 
-• pharmacy supply planning
-• healthcare resource management
-• seasonal demand forecasting
+• health metric estimation  
+• missing value estimation in clinical datasets  
+• statistical modelling of health indicators  
+
+
+### Time-Series Forecasting
+
+Forecast future prescription demand using ARIMA models in BigQuery ML.
+
+Potential use cases:
+
+• pharmacy inventory planning  
+• medication demand forecasting  
+• healthcare supply chain optimisation
 
 ---
 
@@ -92,13 +113,22 @@ notebooks/      Data analysis notebooks
 scripts/        Pipeline scripts
 sql/            BigQuery SQL queries
 ```
+## Documentation
+
+Detailed project documentation is available in the following files:
+
+• architecture/system_architecture.md  
+• architecture/system_design.md  
+• docs/pipeline_overview.md  
+• docs/cloud_infrastructure.md  
+• docs/data_ingestion.md
 
 ---
 
-# Exploratory Data Analysis
+## Exploratory Data Analysis
 
-The dataset was analysed using a Python notebook connected to BigQuery.
-Below are some key visualisations generated during the analysis.
+The dataset was analysed using a Python notebook connected to BigQuery.  
+The following visualisations were generated to understand feature distributions and relationships.
 
 ## Height Distribution
 
@@ -141,3 +171,15 @@ The correlation heatmap highlights relationships between the variables:
 **Kaustubh Kaushal**
 MSc Advanced Computer Science (Data Analytics)
 University of Leeds
+
+## Project Status
+
+This project implements a complete cloud-native healthcare analytics pipeline including:
+
+• scalable data ingestion using BigQuery  
+• SQL-based data cleaning and feature engineering  
+• exploratory data analysis using Python  
+• machine learning models using BigQuery ML  
+• regression, classification, and forecasting models  
+
+The system demonstrates an end-to-end workflow for building cloud-based healthcare analytics solutions.
