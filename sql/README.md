@@ -1,11 +1,4 @@
-# SQL Queries
-
-This folder contains BigQuery SQL scripts used in the project.
-
-Planned queries:
-
-* data cleaning
-* feature engineering
-* regression models
-* classification models
-* forecasting models
+sql/
+   data_pipeline/     data cleaning and feature engineering
+   models/            machine learning model training
+   evaluation/        model evaluation and predictions
