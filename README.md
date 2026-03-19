@@ -166,6 +166,18 @@ The correlation heatmap highlights relationships between the variables:
 
 ---
 
+## Dashboard
+
+An interactive dashboard was built using Streamlit to visualise:
+
+• exploratory data analysis  
+• regression model predictions  
+• prescription demand forecasting  
+
+The dashboard connects directly to BigQuery and provides real-time analytics.
+
+---
+
 # Author
 
 **Kaustubh Kaushal**
