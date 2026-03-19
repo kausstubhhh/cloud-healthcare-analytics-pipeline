@@ -175,6 +175,11 @@ An interactive dashboard was built using Streamlit to visualise:
 • prescription demand forecasting  
 
 The dashboard connects directly to BigQuery and provides real-time analytics.
+## Deployment
+The dashboard is deployed using Streamlit Cloud and integrates securely with Google BigQuery using service account authentication.
+
+Live Demo
+https://your-streamlit-link.streamlit.app
 
 ---
 
